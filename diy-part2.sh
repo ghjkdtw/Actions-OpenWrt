@@ -110,7 +110,7 @@ sed -i "9s/1.1.1.1/8.8.8.8/" package/passwall/luci-app-passwall/root/usr/share/p
 sed -i "s/option enabled '0'/option enabled '1'/g" package/passwall/luci-app-passwall/root/usr/share/passwall/0_default_config # 节点总开关（开启，默认关闭）
 #sed -i "s/option start_delay '60'/option start_delay '6'/g" package/passwall/luci-app-passwall/root/usr/share/passwall/0_default_config
 #sed -i "s/option when_chnroute_default_dns 'direct'/option chinadns_ng '1'/g" package/passwall/luci-app-passwall/root/usr/share/passwall/0_default_config
-
+sed -i "s/option start_delay '60'/option start_delay '10'/" package/passwall/luci-app-passwall/root/usr/share/passwall/0_default_config
 
 #取消掉feeds.conf.default文件里面的helloworld的#注释
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowSocksR Plus+出国软件
